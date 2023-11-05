@@ -1,6 +1,6 @@
 
 
-let rn = Math.floor(Math.random()*10);
+let rn = 0;
 
 
 var score = 0;
@@ -16,6 +16,7 @@ function scoreDec(){
 }
 
 function hitrn(){
+    rn = Math.floor(Math.random()*10);
     let hit = document.querySelector("#hit").innerHTML = rn;
 }
 
@@ -25,13 +26,12 @@ hitrn();
 
 
 document.querySelector("#bot").addEventListener("click", function(dets){
-    let scoreVal =  dets.target.textContent;
-    console.log(scoreVal);
-    if (scoreVal == rn){
+    let scoreVal = Number(dets.target.textContent);
+    if (scoreVal === rn){
         scoreInc();
         hitrn();
         makeBubble();
-    }else if(scoreVal != rn){
+    }else if(scoreVal !== rn){
         scoreDec();
         hitrn();
         makeBubble();
@@ -44,7 +44,7 @@ document.querySelector("#bot").addEventListener("click", function(dets){
 
 
 
-var time = 120;
+var time = 4;
 
 function runTimer(){
     let timeInt = setInterval (function(){
@@ -53,7 +53,8 @@ function runTimer(){
             let timer = document.querySelector("#timer").textContent= time;
         }else{
             clearInterval(timeInt);
-            document.querySelector(".bot").innerHTML = "Game Over";
+            document.getElementById("bot").style.pointerEvents = "none";
+            document.querySelector(".bot").innerHTML = `<h1 id = "tex">Game Over</h1> <br>  <h1 id ="dj"> Your total score is : ${score}</h1>`;
         }
 
     },1000);
@@ -65,7 +66,7 @@ runTimer();
 
 function makeBubble(){
     let balls = "";
-    for (let i = 0; i<96; i++ ){
+    for (let i = 0; i<130; i++ ){
         let rn = Math.floor(Math.random()*10);
         balls += `<div class="ball"> ${rn} </div>`;
     };
