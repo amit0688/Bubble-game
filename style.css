@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: duru sans;
+}
+
+.back{
+    background-color: rgb(158, 235, 120);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    height: 80%;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.top{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(34, 116, 34);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont{
+    display: flex;
+    gap: 2vh;
+}
+
+.num{
+    width: 5vh;
+    height: 3.5vh;
+    background-color: rgb(250, 204, 204);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    
+}
+
+.bot{
+    height: calc(100 - 100px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.ball{
+    margin: 1vh;
+    height: 6vh;
+    width: 6vh;
+    background-color: rgb(255, 0, 98);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.ball:hover{
+    background-color: rgb(190, 76, 76);
+}
