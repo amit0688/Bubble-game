@@ -48,7 +48,6 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    
 }
 
 .bot{
@@ -60,6 +59,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: aliceblue;
     
 }
 
@@ -69,13 +69,13 @@ body{
     /* margin: 1vh; */
     height: 50px;
     width: 50px;
-    background-color: rgb(255, 0, 98);
+    background-color: rgb(236, 240, 9);
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    color: white;
+    color: black;
     cursor: pointer;
     
 }
@@ -99,3 +99,44 @@ body{
     color: rgb(48, 240, 173);
     
 }
+
+
+@media screen and (max-width: 480px) {
+    .ball{
+        height: 30px;
+        width: 30px;
+    }
+
+    
+
+    #tex{
+        font-size: 20px;
+    }
+
+    #dj{
+        font-size: 20px;
+    }
+
+    .num{
+        font-size: 15px;
+        height: 22px;
+        width: 30px;
+    }
+
+    .cont h2{
+        font-size: 15px;
+        color: wheat;
+    }
+    .top{
+        height: 80px;
+        border-bottom: 4px solid darkgreen;
+    }
+
+    .bot{
+        overflow: hidden;
+        height: calc(100% - 80px);
+    }
+
+    
+
+  }

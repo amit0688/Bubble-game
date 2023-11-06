@@ -54,7 +54,7 @@ function runTimer(){
         }else{
             clearInterval(timeInt);
             document.getElementById("bot").style.pointerEvents = "none";
-            document.querySelector(".bot").innerHTML = `<h1 id = "tex">Game Over</h1> <br>  <h1 id ="dj"> Your total score is : ${score}</h1>`;
+            document.querySelector(".bot").innerHTML = `<h1 id = "tex">Game Over</h1> <h1 id ="dj"> Your total score is : ${score}</h1>`;
         }
 
     },1000);
