@@ -103,8 +103,8 @@ body{
 
 @media screen and (max-width: 480px) {
     .ball{
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
     }
 
     
@@ -123,8 +123,12 @@ body{
         width: 30px;
     }
 
+    .cont{
+        gap: 6px;
+    }
+
     .cont h2{
-        font-size: 15px;
+        font-size: 18px;
         color: wheat;
     }
     .top{
