@@ -44,7 +44,7 @@ document.querySelector("#bot").addEventListener("click", function(dets){
 
 
 
-var time = 4;
+var time = 120;
 
 function runTimer(){
     let timeInt = setInterval (function(){

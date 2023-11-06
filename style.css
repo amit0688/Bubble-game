@@ -69,7 +69,7 @@ body{
     /* margin: 1vh; */
     height: 50px;
     width: 50px;
-    background-color: rgb(236, 240, 9);
+    background-color: rgb(245, 248, 84);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -133,7 +133,7 @@ body{
     }
     .top{
         height: 80px;
-        border-bottom: 4px solid darkgreen;
+        border-bottom: 4px solid blue;
     }
 
     .bot{
