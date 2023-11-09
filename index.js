@@ -43,8 +43,23 @@ document.querySelector("#bot").addEventListener("click", function(dets){
 
 
 
+// function reset(){
+//     // time = 121;
+//     // score = 10;
+//     // makeBubble();
+//     // hitrn();
+//     // document.getElementById("bot").style.pointerEvents = "all";
+//     // runTimer();
+//     window.Location.reload();
+// }
 
-var time = 120;
+document.querySelector('#re').addEventListener('click', function(){
+    window.location.reload();
+    return false;
+  });
+
+
+var time = 4;
 
 function runTimer(){
     let timeInt = setInterval (function(){
