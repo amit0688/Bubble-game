@@ -59,7 +59,7 @@ document.querySelector('#re').addEventListener('click', function(){
   });
 
 
-var time = 4;
+var time = 120;
 
 function runTimer(){
     let timeInt = setInterval (function(){
